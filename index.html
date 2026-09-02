@@ -873,6 +873,55 @@
   and object masks, respectively. Qwen-Edit and Step-Edit denote Qwen-Image-Edit
   and Step1X-Edit-v1p2, respectively.
 </p>
+
+       <h3 class="title is-4 has-text-centered mt-6">GenImage Results</h3>
+
+<div class="results-table-wrap">
+  <table class="results-table">
+    <thead>
+      <tr>
+        <th>Methods</th>
+        <th>ADM</th>
+        <th>VQDM</th>
+        <th>Midjourney</th>
+        <th>Wukong</th>
+        <th>GLIDE</th>
+        <th>BigGAN</th>
+        <th>SDv1.4</th>
+        <th>SDv1.5</th>
+        <th>Avg.</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr><td>UniFD</td><td>58.10</td><td>67.80</td><td>91.50</td><td>94.50</td><td>73.40</td><td>57.70</td><td>96.40</td><td>96.10</td><td>79.50</td></tr>
+      <tr><td>LOTA</td><td>99.40</td><td>99.40</td><td>91.30</td><td>99.80</td><td>98.20</td><td>100.00</td><td>99.90</td><td>99.90</td><td>98.50</td></tr>
+      <tr><td>DRCT</td><td>79.40</td><td>90.00</td><td>91.50</td><td>94.70</td><td>89.20</td><td>81.70</td><td>95.00</td><td>94.40</td><td>89.50</td></tr>
+      <tr><td>FatFormer</td><td>76.46</td><td>97.92</td><td>93.43</td><td>99.00</td><td>88.71</td><td>55.80</td><td>100.00</td><td>99.00</td><td>88.93</td></tr>
+      <tr><td>NPR</td><td>77.45</td><td>84.94</td><td>81.62</td><td>97.67</td><td>90.50</td><td>84.20</td><td>98.20</td><td>98.68</td><td>89.33</td></tr>
+      <tr><td>SAFE</td><td>82.10</td><td>96.30</td><td>95.30</td><td>98.20</td><td>96.30</td><td>97.80</td><td>99.40</td><td>99.30</td><td>95.60</td></tr>
+      <tr><td>AIDE</td><td>78.54</td><td>80.26</td><td>79.38</td><td>98.65</td><td>91.82</td><td>66.89</td><td>99.74</td><td>99.76</td><td>86.88</td></tr>
+      <tr><td>Effort</td><td>78.70</td><td>91.70</td><td>82.40</td><td>97.40</td><td>93.30</td><td>77.60</td><td>99.80</td><td>99.80</td><td>91.10</td></tr>
+      <tr><td>Forgelens</td><td>80.65</td><td>89.30</td><td>64.18</td><td>94.16</td><td>94.92</td><td>98.80</td><td>95.87</td><td>95.53</td><td>89.18</td></tr>
+      <tr><td>LTD</td><td>90.38</td><td>92.53</td><td>62.97</td><td>96.33</td><td>97.63</td><td>98.61</td><td>97.23</td><td>97.24</td><td>91.62</td></tr>
+      <tr><td>Aligned</td><td>52.40</td><td>75.00</td><td>97.50</td><td>99.60</td><td>57.60</td><td>50.60</td><td>99.70</td><td>99.60</td><td>79.00</td></tr>
+      <tr><td>B-Free</td><td>79.80</td><td>88.70</td><td>95.70</td><td>99.00</td><td>85.30</td><td>68.70</td><td>98.80</td><td>98.80</td><td>89.30</td></tr>
+      <tr><td>RPOBE</td><td>91.00</td><td>98.90</td><td>98.80</td><td>99.50</td><td>92.10</td><td>95.00</td><td>99.40</td><td>99.40</td><td>96.80</td></tr>
+      <tr><td>OmniAID</td><td>91.40</td><td>97.30</td><td>85.70</td><td>98.10</td><td>98.70</td><td>98.70</td><td>98.90</td><td>98.80</td><td>95.90</td></tr>
+      <tr><td>DDA</td><td>94.30</td><td>94.60</td><td>94.40</td><td>96.30</td><td>93.10</td><td>95.80</td><td>97.30</td><td>97.20</td><td>95.50</td></tr>
+      <tr><td>DINO-Det</td><td>87.82</td><td>99.32</td><td>93.85</td><td>99.60</td><td>97.39</td><td>98.94</td><td>99.79</td><td>99.64</td><td>96.77</td></tr>
+
+      <tr class="ours"><td>FPD (Ours)</td><td>77.30</td><td>96.19</td><td>93.66</td><td>99.62</td><td>92.47</td><td>91.91</td><td>99.69</td><td>99.69</td><td>93.81</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<p class="results-caption">
+  <strong>Table 3.</strong> Balanced accuracy (%) comparison on the GenImage benchmark.
+  Our method is trained on the SDv1.4 training set, while the compared methods use
+  the official checkpoints released by their authors.
+</p>
+
  <p class="has-text-centered mt-4">
   For more detailed results, please see the
   <a href="https://arxiv.org/abs/2607.24016" target="_blank" rel="noopener noreferrer">
